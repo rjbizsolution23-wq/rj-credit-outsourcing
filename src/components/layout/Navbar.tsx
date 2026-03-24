@@ -8,11 +8,11 @@ import { cn } from '@/lib/utils'
 import { CALENDLY_URL } from '@/lib/constants'
 
 const NAV_LINKS = [
+  { label: 'About',     href: '#about' },
   { label: 'Services',  href: '#services' },
   { label: 'Pricing',   href: '#pricing' },
   { label: 'ROI Calc',  href: '#roi' },
   { label: 'Process',   href: '#process' },
-  { label: 'FAQ',       href: '#faq' },
 ]
 
 export default function Navbar() {
@@ -38,12 +38,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-600 to-cyan-500 flex items-center justify-center text-lg shadow-lg shadow-violet-500/30 group-hover:shadow-violet-500/50 transition-all">
-              ⚖️
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-violet-600 to-cyan-500 flex items-center justify-center text-xl shadow-lg shadow-violet-500/30 group-hover:shadow-violet-500/50 transition-all">
+              🚀
             </div>
             <div className="leading-tight hidden sm:block">
-              <div className="text-sm font-bold text-white font-display">Credit Master AGI</div>
-              <div className="text-[10px] text-violet-400 font-mono">Rick Jefferson · B2B</div>
+              <div className="text-md font-bold text-white font-display uppercase tracking-tight">RJ Business Solutions</div>
+              <div className="text-[10px] text-violet-400 font-mono uppercase tracking-widest leading-none">Supreme Autonomous Systems</div>
             </div>
           </Link>
 

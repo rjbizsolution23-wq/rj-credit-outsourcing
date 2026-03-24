@@ -3,6 +3,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Hero from '@/components/sections/Hero'
 import Services from '@/components/sections/Services'
+import About from '@/components/sections/About'
 import Pricing from '@/components/sections/Pricing'
 import ROICalculator from '@/components/sections/ROICalculator'
 import Process from '@/components/sections/Process'
@@ -23,6 +24,7 @@ export default function HomePage() {
       <main>
         <Hero />
         <Services />
+        <About />
         <Pricing />
         <ROICalculator />
         <Process />

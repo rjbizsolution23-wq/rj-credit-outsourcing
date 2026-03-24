@@ -51,13 +51,16 @@
 
 ---
 
-## Overview
+## 🏛️ About RJ Business Solutions
 
-> **RJ Credit Outsourcing** — A high-performance, edge-native B2B credit repair outsourcing platform built for speed, security, and scale.
+**RJ Business Solutions** is a premier AGI-level architecture and data engineering firm led by **Rick Jefferson**. We specialize in:
+- **Autonomous Agent Clusters** (201-Agent framework)
+- **Edge-Computing Solutions** (Cloudflare-native architecture)
+- **Professional B2B Credit Processing**
+- **Military-Grade Data Security**
 
-This project was built and is maintained by **RJ Business Solutions**.
-📍 1342 NM 333, Tijeras, New Mexico 87059
-🌐 [rjbusinesssolutions.org](https://rjbusinesssolutions.org)
+**Location:** 1342 NM 333, Tijeras, New Mexico 87059  
+**Expertise:** AGI-Level Prompt Architecture | Full Stack Dev | Cloud & Cybersecurity Expert
 
 ---
 
