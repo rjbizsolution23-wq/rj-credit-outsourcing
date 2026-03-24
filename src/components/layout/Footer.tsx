@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { CALENDLY_URL } from '@/lib/constants'
 
 export default function Footer() {
