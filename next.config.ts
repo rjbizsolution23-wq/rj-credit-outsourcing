@@ -2,6 +2,7 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   experimental: {
+    // @ts-expect-error - turbopack options not in NextConfig types yet
     turbopack: { root: __dirname },
   },
   images: {
