@@ -25,6 +25,8 @@ jobs:
 
       - name: Build with next-on-pages
         run: npx @cloudflare/next-on-pages@1
+                env:
+                          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
