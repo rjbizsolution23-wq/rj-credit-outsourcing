@@ -4,6 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { motion } from 'framer-motion'
 import { Send, CheckCircle } from 'lucide-react'
+import Image from 'next/image'
 import { useState } from 'react'
 import { toast } from 'sonner'
 import { cn } from '@/lib/utils'
@@ -50,6 +51,15 @@ export default function LeadCapture() {
   return (
     <section id="contact" className="py-24">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-center mb-6">
+          <Image
+            src="https://storage.googleapis.com/msgsndr/qQnxRHDtyx0uydPd5sRl/media/67eb83c5e519ed689430646b.jpeg"
+            alt="RJ Business Solutions Logo"
+            width={80}
+            height={80}
+            className="rounded-full shadow-xl shadow-violet-500/10 border-2 border-white/5"
+          />
+        </div>
         <div className="text-center mb-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

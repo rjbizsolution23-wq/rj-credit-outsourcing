@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import { ArrowRight, Phone, Mail } from 'lucide-react'
+import Image from 'next/image'
 import { CALENDLY_URL } from '@/lib/constants'
 
 export default function FinalCTA() {
@@ -17,7 +18,15 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           className="glass-card rounded-[2rem] p-12 lg:p-16 glow-border"
         >
-          <div className="text-5xl mb-6 float-anim">⚖️</div>
+          <div className="flex justify-center mb-8">
+            <Image
+              src="https://storage.googleapis.com/msgsndr/qQnxRHDtyx0uydPd5sRl/media/67eb83c5e519ed689430646b.jpeg"
+              alt="RJ Business Solutions Logo"
+              width={100}
+              height={100}
+              className="rounded-full shadow-2xl shadow-violet-500/20 border-2 border-white/10"
+            />
+          </div>
 
           <h2 className="font-display font-extrabold text-4xl sm:text-5xl text-white mb-4 leading-tight">
             Ready to{' '}
