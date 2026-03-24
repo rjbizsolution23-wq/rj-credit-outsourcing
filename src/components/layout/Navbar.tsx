@@ -38,8 +38,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-violet-600 to-cyan-500 flex items-center justify-center text-xl shadow-lg shadow-violet-500/30 group-hover:shadow-violet-500/50 transition-all">
-              🚀
+            <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-violet-500/30 group-hover:shadow-violet-500/50 transition-all">
+              <Image 
+                src="https://storage.googleapis.com/msgsndr/qQnxRHDtyx0uydPd5sRl/media/67eb83c5e519ed689430646b.jpeg"
+                alt="RJ Business Solutions"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="leading-tight hidden sm:block">
               <div className="text-md font-bold text-white font-display uppercase tracking-tight">RJ Business Solutions</div>

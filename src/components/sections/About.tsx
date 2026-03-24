@@ -85,8 +85,13 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-violet-600/20 via-transparent to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               
               <div className="flex flex-col items-center text-center relative z-10">
-                <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-violet-600 to-cyan-500 flex items-center justify-center text-5xl mb-6 shadow-2xl shadow-violet-500/20">
-                  👨‍💻
+                <div className="relative w-32 h-32 rounded-3xl overflow-hidden mb-6 shadow-2xl shadow-violet-500/20">
+                  <Image 
+                    src="https://storage.googleapis.com/msgsndr/qQnxRHDtyx0uydPd5sRl/media/67eb83c5e519ed689430646b.jpeg"
+                    alt="Rick Jefferson"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2 font-display">Rick Jefferson</h3>
                 <p className="text-violet-400 font-mono text-sm mb-6 uppercase tracking-widest px-4 border-b border-violet-500/30 pb-4">

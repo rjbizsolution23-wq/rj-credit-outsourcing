@@ -137,7 +137,7 @@ export default function Pricing() {
 
                 {/* CTA */}
                 <a
-                  href={CALENDLY_URL}
+                  href={tier.id === 'starter' ? 'https://myfreescorenow.com/enroll/?AID=RickJeffersonSolutions&PID=49914' : CALENDLY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={cn(
@@ -147,7 +147,7 @@ export default function Pricing() {
                       : 'bg-white/8 border border-white/12 text-white hover:bg-white/12',
                   )}
                 >
-                  {tier.id === 'starter' ? 'Start Free Trial' : 'Book Consultation'}
+                  {tier.id === 'starter' ? 'Get Started with Credit Monitoring' : 'Book Consultation'}
                 </a>
               </motion.div>
             )

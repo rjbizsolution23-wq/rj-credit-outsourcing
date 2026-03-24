@@ -9,8 +9,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-violet-600 to-cyan-500 flex items-center justify-center text-xl shadow-lg shadow-violet-500/20">
-                🚀
+              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-violet-500/20">
+                <Image 
+                  src="https://storage.googleapis.com/msgsndr/qQnxRHDtyx0uydPd5sRl/media/67eb83c5e519ed689430646b.jpeg"
+                  alt="RJ Business Solutions"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div>
                 <div className="text-md font-bold text-white font-display uppercase tracking-tight">RJ Business Solutions</div>
