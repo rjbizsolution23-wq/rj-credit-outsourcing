@@ -1,0 +1,30 @@
+name: Security Scan
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Weekly on Sundays
+  push:
+    branches:
+      - main
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Security Audit
+        run: pnpm audit --audit-level critical
+
+      - name: Run Secret Scan
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,36 +1,89 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
+# ========================
+# ENVIRONMENT & SECRETS
+# ========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
 *.pem
+*.key
+*.cert
+*.p12
 
-# debug
+# ========================
+# NODE / PNPM
+# ========================
+node_modules/
+.pnpm-debug.log*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
-# local env files
-.env*.local
-
-# vercel
+# ========================
+# NEXT.JS
+# ========================
+.next/
+out/
+build/
+dist/
 .vercel
 
-# typescript
+# ========================
+# TURBOREPO
+# ========================
+.turbo/
+
+# ========================
+# CLOUDFLARE
+# ========================
+.wrangler/
+.dev.vars
+
+# ========================
+# TESTING & COVERAGE
+# ========================
+coverage/
+*.lcov
+.nyc_output/
+playwright-report/
+test-results/
+
+# ========================
+# OS FILES
+# ========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ========================
+# IDE / EDITORS
+# ========================
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ========================
+# LOGS
+# ========================
+*.log
+logs/
+lerna-debug.log*
+
+# ========================
+# MISC
+# ========================
+*.tgz
+*.tar.gz
+.cache/
+tmp/
+temp/
 *.tsbuildinfo
-next-env.d.ts

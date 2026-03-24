@@ -1,0 +1,15 @@
+# CODEOWNERS — defines code review requirements
+# Format: [path pattern] [GitHub username(s)]
+
+# Global owner — Rick reviews everything
+* @rjbizsolution23-wq
+
+# Frontend & Backend
+/ @rjbizsolution23-wq
+
+# Infrastructure & CI/CD
+/.github/ @rjbizsolution23-wq
+
+# Documentation
+/docs/ @rjbizsolution23-wq
+*.md @rjbizsolution23-wq
